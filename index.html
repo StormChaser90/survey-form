@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <style>
+    .font {
+        font-family: 'Courier New', Courier, monospace;
+    }
     #choose-brand {
         list-style: none;
         margin-left: 10px;
@@ -25,11 +28,11 @@
 </style>
 
 <head>
-    <h1>Bicycle Survey</h1>
-    <p id="greeting">Hello! I am looking to collect some information regarding preferred bicycle manufacturers and terrain preferences.</p>
-    <p id="fill-form">Please fill out the form below:</p>
+    <h1 class="font">Bicycle Survey</h1>
+    <p class="font" id="greeting">Hello! I am looking to collect some information regarding preferred bicycle manufacturers and terrain preferences.</p>
+    <p class="font" id="fill-form">Please fill out the form below:</p>
 <body>
-    <form id="survey-form" method="post">
+    <form class="font" id="survey-form" method="post">
         <input type="text" id="name" placeholder="name">
         <input type="email" id="email" placeholder="email" required>
         <input type="number" id="number" placeholder="age" required min="1" max="100">
