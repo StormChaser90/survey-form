@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html>
 <style>
-#choose-brand {
-    list-style: none;
-    margin-left: 10px;
-}
-#riding-terrain {
-    list-style: none;
-}
-#select-apply {
-    text-align: left;
-    font-size: 14px;
-}
-#choose-one {
-    text-align: left;
-    font-size: 14px;
-}
+    #choose-brand {
+        list-style: none;
+        margin-left: 10px;
+    }
+
+    #riding-terrain {
+        list-style: none;
+    }
+
+    #select-apply {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    #choose-one {
+        text-align: left;
+        font-size: 14px;
+    }
 </style>
 
 <head>
 
 <body>
-    <h1 id="survey-form">
-
-    </h1>
-    <p id="description">
-
-    </p>
     <form id="survey-form">
         <input type="text" id="name" placeholder="name">
         <input type="email" id="email" placeholder="email" required>
@@ -38,57 +35,55 @@
             <option value="female">female</option>
             <option value="other">Prefer not to say</option>
         </select>
-        <h2>
-            <p id="bike-brand"> Which bicycle brand do you prefer?</p>
-            <p id="choose-one">Choose One:</p>
-        <ul id="choose-brand" name="choose-brand">
+        <p id="brand-question"> Which bicycle brand do you prefer?</p>
+        <p id="choose-one">Choose one:</p>
+        <ul id="choose-brand" name="brand">
+            <label for="kona">
+                <input id="kona" type="radio" name="bicyles"> Kona
+            </label>
+        </li>
+        <li>
+            <label for="tumbleweed">
+                <input id="tumbleweed" type="radio" name="bicyles"> Tumbleweed
+            </label>
+        </li>
+        <li>
+            <label for="salsa">
+                <input id="salsa" type="radio" name="bicyles"> Salsa
+            </label>
+        </li>
+    </ul>
+        <p id="terrain">Terrain Preference:</p>
+        <p id="select-apply">Select all that apply:</p>
+        <ul id="riding-terrain" name="riding-terrain">
             <li>
-                <label for="kona">
-                    <input id="kona" type="radio" name="bicyles"> Kona
+                <label for="gravel">
+                    <input value="2" id="gravel" type="checkbox" name="gravel"> Gravel
                 </label>
             </li>
             <li>
-                <label for="tumbleweed">
-                    <input id="tumbleweed" type="radio" name="bicyles"> Tumbleweed
+                <label for="road">
+                    <input value="1" id="road" type="checkbox" name="road"> Road
                 </label>
             </li>
             <li>
-                <label for="salsa">
-                    <input id="salsa" type="radio" name="bicyles"> Salsa
+                <label for="snow">
+                    <input value="4" id="snow" type="checkbox" name="snow"> Snow
                 </label>
             </li>
-            <p id="terrain">Terrain Preference:</p>
-            <p id="select-apply">Select all that apply:</p>
-            <ul id="riding-terrain" name="riding-terrain">
-                <li>
-                    <label for="gravel">
-                        <input value="2" id="gravel" type="checkbox" name="gravel"> Gravel
-                    </label>
-                </li>
-                <li>
-                    <label for="road">
-                        <input value="1" id="road" type="checkbox" name="road"> Road
-                    </label>
-                </li>
-                <li>
-                    <label for="snow">
-                        <input value="4" id="snow" type="checkbox" name="snow"> Snow
-                    </label>
-                </li>
-                <li>
-                    <label for="single-track">
-                        <input value="3" id="single-track" type="checkbox" name="single-track"> Single Track
-                    </label>
-                </li>
-                <li>
-                    <label for="rugged-mountain">
-                        <input value="5" id="rugged-mountain" type="checkbox" name="rugged-mountain"> Rugged Mountain
-                    </label>
-                </li>
-            </ul>
-            <input type="submit" button="submit">
+            <li>
+                <label for="single-track">
+                    <input value="3" id="single-track" type="checkbox" name="single-track"> Single Track
+                </label>
+            </li>
+            <li>
+                <label for="rugged-mountain">
+                    <input value="5" id="rugged-mountain" type="checkbox" name="rugged-mountain"> Rugged Mountain
+                </label>
+            </li>
         </ul>
-    </h2>
+        <input type="submit" button="submit">
+        </ul>
     </form>
 </body>
 </head>
