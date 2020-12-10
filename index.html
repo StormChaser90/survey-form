@@ -3,6 +3,18 @@
 <style>
 #choose-brand {
     list-style: none;
+    margin-left: 10px;
+}
+#riding-terrain {
+    list-style: none;
+}
+#select-apply {
+    text-align: left;
+    font-size: 14px;
+}
+#choose-one {
+    text-align: left;
+    font-size: 14px;
 }
 </style>
 
@@ -27,7 +39,8 @@
             <option value="other">Prefer not to say</option>
         </select>
         <h2>
-            <p> Which bicycle brand do you prefer?</p>
+            <p id="bike-brand"> Which bicycle brand do you prefer?</p>
+            <p id="choose-one">Choose One:</p>
         <ul id="choose-brand" name="choose-brand">
             <li>
                 <label for="kona">
@@ -44,6 +57,35 @@
                     <input id="salsa" type="radio" name="bicyles"> Salsa
                 </label>
             </li>
+            <p id="terrain">Terrain Preference:</p>
+            <p id="select-apply">Select all that apply:</p>
+            <ul id="riding-terrain" name="riding-terrain">
+                <li>
+                    <label for="gravel">
+                        <input id="gravel" type="checkbox" name="gravel"> Gravel
+                    </label>
+                </li>
+                <li>
+                    <label for="road">
+                        <input id="road" type="checkbox" name="road"> Road
+                    </label>
+                </li>
+                <li>
+                    <label for="snow">
+                        <input id="snow" type="checkbox" name="snow"> Snow
+                    </label>
+                </li>
+                <li>
+                    <label for="single-track">
+                        <input id="single-track" type="checkbox" name="single-track"> Single Track
+                    </label>
+                </li>
+                <li>
+                    <label for="rugged-mountain">
+                        <input id="rugged-mountain" type="checkbox" name="rugged-mountain"> Rugged Mountain
+                    </label>
+                </li>
+            </ul>
             <input type="submit" button="submit">
         </ul>
     </h2>
