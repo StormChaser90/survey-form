@@ -19,11 +19,15 @@
         text-align: left;
         font-size: 14px;
     }
+    #greeting {
+        max-width: 400px;
+    }
 </style>
 
 <head>
     <h1>Bicycle Survey</h1>
-    <p>Please fill out the form below.</p>
+    <p id="greeting">Hello! I am looking to collect some information regarding preferred bicycle manufacturers and terrain preferences.</p>
+    <p id="fill-form">Please fill out the form below:</p>
 <body>
     <form id="survey-form" method="post">
         <input type="text" id="name" placeholder="name">
@@ -37,7 +41,7 @@
             <option value="other">Prefer not to say</option>
         </p>
         </select>
-        <p id="brand-question"> Which bicycle brand do you prefer?</p>
+        <p id="brand-question"> Which bicycle manufacturer do you prefer?</p>
         <p id="choose-one">Choose one:</p>
         <ul id="choose-brand" name="brand">
             <label for="kona">
@@ -54,8 +58,13 @@
                 <input id="salsa" type="radio" name="bicyles"> Salsa
             </label>
         </li>
+        <li>
+            <label for="other">
+                <input id="other" type="radio" name="bicyles"> Other
+            </label>
+        </li>
     </ul>
-        <p id="terrain">Terrain Preference:</p>
+        <p id="terrain">Riding Terrain Preference:</p>
         <p id="select-apply">Select all that apply:</p>
         <ul id="riding-terrain" name="riding-terrain">
             <li>
