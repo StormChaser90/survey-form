@@ -24,7 +24,7 @@
 <head>
 
 <body>
-    <form id="survey-form">
+    <form id="survey-form" method="post">
         <input type="text" id="name" placeholder="name">
         <input type="email" id="email" placeholder="email" required>
         <input type="number" id="number" placeholder="age" required min="1" max="100">
@@ -82,6 +82,10 @@
                 </label>
             </li>
         </ul>
+        <p id="additional-comments">Please include any additional information.</p>
+        <div class="comment">
+            <textarea id="comment-box" type="text" rows="10" cols="40" placeholder="write a comment..."></textarea>
+        </div>
         <input type="submit" button="submit">
         </ul>
     </form>
